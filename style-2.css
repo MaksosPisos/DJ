@@ -1,0 +1,159 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background: rgb(28, 27, 33);
+    
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+ 
+}
+header {
+    position: fixed;
+    padding-top: 30px;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 9999999999999999999999;
+}
+.header-wrapper{
+    margin: 0 auto;
+    max-width: 920px;
+}
+.header-logo {
+    padding-right: 4rem;
+}
+.header-logo_img{
+    padding-right: 1.5rem;
+}
+.header-menu {
+    display: flex;
+    align-items: center;
+    column-gap: 56px;
+}
+.header-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-style: 18px;
+    line-height: 27px;
+    transition: .2s ease;
+}
+.header-menu a:hover, .header-menu a:focus, .header-menu a:active{
+    opacity: .75;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 1100px;
+}
+.main-wrapper {
+    background: url(./img/main-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.promo {
+    padding-bottom: 130px;
+
+    
+}
+.wrapper h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 72px;
+    padding-bottom: 10px;
+    padding-top: 412px;
+}
+
+.promo .wrapper h2 {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 150px;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+.line-audio {
+    height: 2px;
+    background-color: #fff;
+    width: 800px;
+    cursor: pointer;
+}
+.line-audio span {
+    opacity: 0;
+    transition: .5s ease;
+    font-weight: 500;
+    font-style: 18px;
+    line-height: 28px;
+}
+.line-audio:hover span{
+    opacity: 1;
+}
+.line-audio-skip {
+    background-color: #7A66CC;
+    height: 2px;
+    width: 0;
+    cursor: pointer;
+    transition: 0.01s ease;
+    
+}
+.line-audio-live {
+    background-color: #7A66CC;
+    height: 2px;
+    width: 0;
+    cursor: pointer;
+    transition: 0.01s ease;
+    
+}
+.promo-audio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.audio-timeShtamp {
+    font-weight: 500;
+    font-style: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+
+}
+
+.promo-audio img{
+    cursor: pointer;
+    transition: .2s ease;
+}
+.promo-audio img:hover {
+    opacity: .7;
+}
+.promo-audio_pause{
+    font-size: 22px;
+    display: none;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.promo-audio_pause:hover {
+    opacity: .7;
+}
+.promo-audio_play {
+    display: block;
+}
+.promo-audio_play-pause.active .promo-audio_play{
+    display: none;
+}
+.promo-audio_play-pause.active .promo-audio_pause{
+    display: block;
+}
